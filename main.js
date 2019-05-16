@@ -3,7 +3,7 @@ function tryMeMan() {
 }
 
 //Variables
-var groupNames = ["2-4", "4-5"];
+var groupNames = ["Nursery(2-4)", "Reception(4-5)"];
 var males = [6, 6];
 var females = [7, 8];
 var siblings = [12, 16];
