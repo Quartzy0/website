@@ -38,7 +38,7 @@ for (var i = 0; i < groupNames.length; i++) {
     ctx.fillStyle = "#FF6600";
     ctx.fillRect(canvas.width / 2 - (spaceBetweenNumber2 * males[i]) - 15, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), ((canvas.width / 2) - (canvas.width / 2 - (spaceBetweenNumber2 * males[i]))) + 10, (canvas.height - 50) - ((canvas.height - 65) - (spaceBetweenNumber * (i + 1))) - 5);
     ctx.fillStyle = "#009DFF";
-    ctx.fillRect(canvas.width / 2 + 5, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), Math.abs(((canvas.width / 2) - (canvas.width / 2 + (spaceBetweenNumber2 * females[i]))) + 5) + 15, Math.abs((spaceBetweenNumber * (i)) - ((canvas.height - 65) - (spaceBetweenNumber * (i + 1))) - 5));
+    ctx.fillRect(canvas.width / 2 + 5, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), Math.abs(((canvas.width / 2) - (canvas.width / 2 + (spaceBetweenNumber2 * females[i]))) + 5) + 15, (canvas.height - 50) - ((canvas.height - 65) - (spaceBetweenNumber * (i + 1))) - 5);
     ctx.fillStyle = "#FFFFFF";
     ctx.fillText(i + "-" + (i + 1), canvas.width / 2 - 605, (canvas.height - 65) - spaceBetweenNumber * i);
 }
