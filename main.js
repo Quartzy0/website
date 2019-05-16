@@ -3,7 +3,7 @@ function tryMeMan() {
 }
 
 //Variables
-var groupNames = ["Nursery", "Recaption"];
+var groupNames = ["2-4", "4-5"];
 var males = [6, 6];
 var females = [7, 8];
 var siblings = [12, 16];
@@ -36,11 +36,19 @@ var spaceBetweenNumber = (canvas.height - 100) / groupNames.length;
 var spaceBetweenNumber2 = (((canvas.width / 2 + 605) - (canvas.width / 2 - 605) - 10) / 2) / maxAmmount;
 for (var i = 0; i < groupNames.length; i++) {
     ctx.fillStyle = "#FF6600";
-    ctx.fillRect(canvas.width / 2 - (spaceBetweenNumber2 * males[i]) - 15, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), ((canvas.width / 2) - (canvas.width / 2 - (spaceBetweenNumber2 * males[i]))) + 10, (canvas.height - 50) - ((canvas.height - 65) - (spaceBetweenNumber * (i + 1))) - 5);
+    if(i!=0){
+      ctx.fillRect(canvas.width / 2 - (spaceBetweenNumber2 * males[i]) - 15, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), ((canvas.width / 2) - (canvas.width / 2 - (spaceBetweenNumber2 * males[i]))) + 10, Math.abs((spaceBetweenNumber*(i+1))-(spaceBetweenNumber*i)));
+    }else{
+      ctx.fillRect(canvas.width / 2 - (spaceBetweenNumber2 * males[i]) - 15, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), ((canvas.width / 2) - (canvas.width / 2 - (spaceBetweenNumber2 * males[i]))) + 10, (canvas.height - 50)-((canvas.height - 65) - (spaceBetweenNumber * (i + 1)))-5);
+    }
     ctx.fillStyle = "#009DFF";
-    ctx.fillRect(canvas.width / 2 + 5, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), Math.abs(((canvas.width / 2) - (canvas.width / 2 + (spaceBetweenNumber2 * females[i]))) + 5) + 15, (canvas.height - 50) - ((canvas.height - 65) - (spaceBetweenNumber * (i + 1))) - 5);
+    if(i!=0){
+      ctx.fillRect(canvas.width / 2 + 5, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), Math.abs(((canvas.width / 2) - (canvas.width / 2 + (spaceBetweenNumber2 * females[i]))) + 5) + 15, Math.abs((spaceBetweenNumber*(i+1))-(spaceBetweenNumber*i)));
+    }else{
+      ctx.fillRect(canvas.width / 2 + 5, (canvas.height - 65) - (spaceBetweenNumber * (i + 1)), Math.abs(((canvas.width / 2) - (canvas.width / 2 + (spaceBetweenNumber2 * females[i]))) + 5) + 15, (canvas.height - 50)-((canvas.height - 65) - (spaceBetweenNumber * (i + 1)))-5);
+    }
     ctx.fillStyle = "#FFFFFF";
-    ctx.fillText(i + "-" + (i + 1), canvas.width / 2 - 605, (canvas.height - 65) - spaceBetweenNumber * i);
+    ctx.fillText(groupNames[i], canvas.width / 2 - 605, (canvas.height - 65) - spaceBetweenNumber * i);
 }
 
 for (var i = 0; i < maxAmmount; i++) {
