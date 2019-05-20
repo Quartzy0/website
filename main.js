@@ -15,6 +15,8 @@ var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
 var imgIrland = document.getElementById("irland");
 
+var analisys = "From what we can see\n the older the students\n in the class are,\n the more female students\n there are. For\n male students\n we can se similar\n resoults.";
+
 var maxAmmount = 1;
 for (var i = 0; i < males.length; i++) {
     if (males[i] > maxAmmount) {
@@ -50,6 +52,7 @@ ctx.font = "15px Arial";
 
 ctx.fillText("Male", (canvas.width / 2 - 605) + 605 / 2, 20);
 ctx.fillText("Female", (canvas.width / 2 + 605) - 605 / 2, 20);
+ctx.fillText(analisys, canvas.width / 2 + 610, 50);
 
 var spaceBetweenNumber = (canvas.height - 100) / groupNames.length;
 var spaceBetweenNumber2 = (((canvas.width / 2 + 605) - (canvas.width / 2 - 605) - 10) / 2) / maxAmmount;
