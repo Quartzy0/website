@@ -10,6 +10,7 @@ var siblings = [12, 16, 21, 27];
 
 var nationalitySpain = [true, true, true, true];
 var nationalityEngland = [false, true, true, true];
+var nationalityIrland = [false, false, false, false];
 var nationalityAmerica = [false, false, false, false];
 var nationalityAustria = [false, false, false, false];
 var nationalityCanada = [false, false, false, false];
