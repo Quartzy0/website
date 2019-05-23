@@ -7,13 +7,35 @@ var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)"
 var males = [6, 6, 13, 10];
 var females = [7, 8, 10, 13];
 var siblings = [12, 16, 21, 27];
+
 var nationalitySpain = [true, true, true, true];
 var nationalityEngland = [false, true, true, true];
-var nationalityIrland = [false, true, false, false];
+var nationalityAmerica = [false, false, false, false];
+var nationalityAustria = [false, false, false, false];
+var nationalityCanada = [false, false, false, false];
+var nationalityFrance = [false, false, false, false];
+var nationalityGermany = [false, false, false, false];
+var nationalityHungary = [false, false, false, false];
+var nationalityKuwaiti = [false, false, false, false];
+var nationalityScotland = [false, false, false, false];
+var nationalityWhales = [false, false, false, false];
+var nationalitySlovenia = [false, false, false, false];
+var nationalityVenezuela = [false, false, false, false];
 
 var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
 var imgIrland = document.getElementById("irland");
+var imgAmerica = document.getElementById("america");
+var imgAusrtia = document.getElementById("austria");
+var imgCanada = document.getElementById("canada");
+var imgFrance = document.getElementById("french");
+var imgGermany = document.getElementById("germany");
+var imgHungary = document.getElementById("hungary");
+var imgKuwaiti = document.getElementById("kuwaiti");
+var imgScotland = document.getElementById("scottish");
+var imgWhales = document.getElementById("whales");
+var imgSlovenia = document.getElementById("slovenia");
+var imgVenezuela = document.getElementById("venezuela");
 
 var analisys = "From what we can see |new|the older the students|new|in the class are,|new|the more female students|new|there are. For|new|male students|new|we can see similar|new|resoults.";
 
