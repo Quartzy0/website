@@ -103,14 +103,18 @@ for (var i = 0; i < groupNames.length; i++) {
     ctx.fillStyle = "#FFFFFF";
     ctx.fillText(groupNames[i], canvas.width / 2 - 605, (canvas.height - 65) - spaceBetweenNumber * i);
     ctx.fillText("Total number of siblings: " + siblings[i] + "----", canvas.width / 2 - 605 - 200, (canvas.height - 65) - spaceBetweenNumber * i);
+    var imgXCount = 0;
     if (nationalitySpain[i]) {
-        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - 200, ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        imgXCount++;
     }
     if (nationalityEngland[i]) {
-        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - 150, ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        imgXCount++;
     }
     if (nationalityIrland[i]) {
-        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - 100, ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        imgXCount++;
     }
 }
 
