@@ -106,55 +106,55 @@ for (var i = 0; i < groupNames.length; i++) {
     ctx.fillText("Total number of siblings: " + siblings[i] + "----", canvas.width / 2 - 605 - 200, (canvas.height - 65) - spaceBetweenNumber * i);
     var imgXCount = 0;
     if (nationalitySpain[i]) {
-        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityEngland[i]) {
-        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityIrland[i]) {
-        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityAmerica[i]) {
-        ctx.drawImage(imgIAmerica, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgIAmerica, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityAustria[i]) {
-        ctx.drawImage(imgAustria, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgAustria, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityCanada[i]) {
-        ctx.drawImage(imgCanada, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgCanada, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityFrance[i]) {
-        ctx.drawImage(imgFrance, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgFrance, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityGermany[i]) {
-        ctx.drawImage(imgGermany, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgGermany, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityHungary[i]) {
-        ctx.drawImage(imgHungary, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgHungary, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityKuwaiti[i]) {
-        ctx.drawImage(imgKuwaiti, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgKuwaiti, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityScotland[i]) {
-        ctx.drawImage(imgScotland, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgScotland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityVenezuela[i]) {
-        ctx.drawImage(imgVenezuela, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgVenezuela, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityWhales[i]) {
-        ctx.drawImage(imgWhales, canvas.width / 2 - 605 - (200 + (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgWhales, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
 }
