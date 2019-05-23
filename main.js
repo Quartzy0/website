@@ -15,7 +15,7 @@ var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
 var imgIrland = document.getElementById("irland");
 
-var analisys = "From what we can see |new|the older the students|new|in the class are,|new|the more female students|new|there are. For|new|male students|new|we can se similar|new|resoults.";
+var analisys = "From what we can see |new|the older the students|new|in the class are,|new|the more female students|new|there are. For|new|male students|new|we can see similar|new|resoults.";
 
 var maxAmmount = 1;
 for (var i = 0; i < males.length; i++) {
