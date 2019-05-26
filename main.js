@@ -1,27 +1,23 @@
-function tryMeMan() {
-    document.write("Lol!");
-}
-
 //Variables
-var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)"];
-var males = [6, 6, 13, 10];
-var females = [7, 8, 10, 13];
-var siblings = [12, 16, 21, 27];
+var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)"];
+var males = [6, 6, 13, 10, 6, 12, 8, 19];
+var females = [7, 8, 10, 13, 5, 12, 12, 11];
+var siblings = [12, 16, 21, 27, 18, 32, 26, 44];
 
-var nationalitySpain = [true, true, true, true];
-var nationalityEngland = [false, true, true, true];
-var nationalityIrland = [false, true, false, false];
-var nationalityAmerica = [false, false, false, false];
-var nationalityAustria = [false, false, false, false];
-var nationalityCanada = [false, false, false, false];
-var nationalityFrance = [false, false, false, false];
-var nationalityGermany = [false, false, false, false];
-var nationalityHungary = [false, false, false, false];
-var nationalityKuwaiti = [false, false, false, false];
-var nationalityScotland = [false, false, false, false];
-var nationalityWhales = [false, false, false, false];
-var nationalitySlovenia = [false, false, false, false];
-var nationalityVenezuela = [false, false, false, false];
+var nationalitySpain = [true, true, true, true, true, true, true, true];
+var nationalityEngland = [false, true, true, true, false, false, false, false];
+var nationalityIrland = [false, true, false, false, false, false, false, false];
+var nationalityAmerica = [false, false, false, false, false, false, false, false];
+var nationalityAustria = [false, false, false, false, false, false, false, false];
+var nationalityCanada = [false, false, false, false, false, false, false, false];
+var nationalityFrance = [false, false, false, false, true, false, false, false];
+var nationalityGermany = [false, false, false, false, false, false, false, false];
+var nationalityHungary = [false, false, false, false, false, false, false, false];
+var nationalityKuwaiti = [false, false, false, false, false, true, true, false];
+var nationalityScotland = [false, false, false, false, false, false, false, false];
+var nationalityWhales = [false, false, false, false, false, false, true, false];
+var nationalitySlovenia = [false, false, false, false, false, false, true, false];
+var nationalityVenezuela = [false, false, false, false, false, true, false, false];
 
 var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
@@ -29,7 +25,7 @@ var imgIrland = document.getElementById("irland");
 var imgAmerica = document.getElementById("america");
 var imgAusrtia = document.getElementById("austria");
 var imgCanada = document.getElementById("canada");
-var imgFrance = document.getElementById("french");
+var imgFrance = document.getElementById("france");
 var imgGermany = document.getElementById("germany");
 var imgHungary = document.getElementById("hungary");
 var imgKuwaiti = document.getElementById("kuwaiti");
@@ -38,7 +34,7 @@ var imgWhales = document.getElementById("whales");
 var imgSlovenia = document.getElementById("slovenia");
 var imgVenezuela = document.getElementById("venezuela");
 
-var analisys = "From what we can see |new|the older the students|new|in the class are|new|the more female students|new|there are. For|new|male students|new|we can see similar|new|resoults.";
+var analisys = "For most classes|new|there are more female|new|students than male|new|with the exception|new|of Year 9.";
 
 var maxAmmount = 1;
 for (var i = 0; i < males.length; i++) {
@@ -106,55 +102,55 @@ for (var i = 0; i < groupNames.length; i++) {
     ctx.fillText("Total number of siblings: " + siblings[i] + "----", canvas.width / 2 - 605 - 200, (canvas.height - 65) - spaceBetweenNumber * i);
     var imgXCount = 0;
     if (nationalitySpain[i]) {
-        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgSpain, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityEngland[i]) {
-        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgEngland, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityIrland[i]) {
-        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgIrland, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityAmerica[i]) {
-        ctx.drawImage(imgIAmerica, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgIAmerica, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityAustria[i]) {
-        ctx.drawImage(imgAustria, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgAustria, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityCanada[i]) {
-        ctx.drawImage(imgCanada, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgCanada, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityFrance[i]) {
-        ctx.drawImage(imgFrance, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgFrance, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityGermany[i]) {
-        ctx.drawImage(imgGermany, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgGermany, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityHungary[i]) {
-        ctx.drawImage(imgHungary, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgHungary, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityKuwaiti[i]) {
-        ctx.drawImage(imgKuwaiti, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgKuwaiti, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityScotland[i]) {
-        ctx.drawImage(imgScotland, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgScotland, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityVenezuela[i]) {
-        ctx.drawImage(imgVenezuela, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgVenezuela, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
     if (nationalityWhales[i]) {
-        ctx.drawImage(imgWhales, canvas.width / 2 - 605 - (200 - (50*imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        ctx.drawImage(imgWhales, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
 }
