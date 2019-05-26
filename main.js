@@ -153,6 +153,10 @@ for (var i = 0; i < groupNames.length; i++) {
         ctx.drawImage(imgWhales, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
+    if (nationalitySlovenia[i]) {
+        ctx.drawImage(imgSlovenia, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        imgXCount++;
+    }
 }
 
 for (var i = 0; i < maxAmmount; i++) {
