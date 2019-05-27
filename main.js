@@ -1,24 +1,24 @@
 //Variables
-var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)"];
-var males = [6, 6, 13, 10, 6, 12, 8, 19];
-var females = [7, 8, 10, 13, 5, 12, 12, 11];
-var siblings = [12, 16, 21, 27, 18, 32, 26, 44];
+var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 3(7-8)", "Year 4(8-9)", "Year 5(9-10)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)"];
+var males = [6, 6, 13, 10, 18, 13, 8, 6, 12, 8, 19];
+var females = [7, 8, 10, 13, 8, 7, 13, 5, 12, 12, 11];
+var siblings = [12, 16, 21, 27, 25, 27, 23, 18, 32, 26, 44];
 
-var nationalitySpain = [true, true, true, true, true, true, true, true];
-var nationalityEngland = [false, true, true, true, false, false, false, false];
-var nationalityIrland = [false, true, false, false, false, false, false, false];
-var nationalityAmerica = [false, false, false, false, false, false, false, false];
-var nationalityAustria = [false, false, false, false, false, false, false, false];
-var nationalityCanada = [false, false, false, false, false, false, false, false];
-var nationalityFrance = [false, false, false, false, true, false, false, false];
-var nationalityGermany = [false, false, false, false, false, false, false, false];
-var nationalityHungary = [false, false, false, false, false, false, false, false];
-var nationalityKuwaiti = [false, false, false, false, false, true, true, false];
-var nationalityScotland = [false, false, false, false, false, false, false, false];
-var nationalityWhales = [false, false, false, false, false, false, true, false];
-var nationalitySlovenia = [false, false, false, false, false, false, true, false];
-var nationalityVenezuela = [false, false, false, false, false, true, false, false];
-var nationalityMexico = [false, false, false, false, false, false, false, false];
+var nationalitySpain = [true, true, true, true, true, true, true, true, true, true, true];
+var nationalityEngland = [false, true, true, true, false, true, true, false, false, false, false];
+var nationalityIrland = [false, true, false, false, false, false, false, false, false, false, false];
+var nationalityAmerica = [false, false, false, false, false, false, false, false, false, false, false];
+var nationalityAustria = [false, false, false, false, false, false, false, false, false, false, false];
+var nationalityCanada = [false, false, false, false, false, false, false, false, false, false, false];
+var nationalityFrance = [false, false, false, false, true, false, false, false, false, false, false];
+var nationalityGermany = [false, false, false, false, false, true, false, false, false, false, false];
+var nationalityHungary = [false, false, false, false, false, false, false, false, false, false, false];
+var nationalityKuwaiti = [false, false, false, false, false, false, false, false, true, true, false];
+var nationalityScotland = [false, false, false, false, false, false, false, false, false, false, false];
+var nationalityWhales = [false, false, false, false, false, false, false, false, false, true, false];
+var nationalitySlovenia = [false, false, false, false, false, false, false, false, false, true, false];
+var nationalityVenezuela = [false, false, false, false, false, false, false, false, true, false, false];
+var nationalityMexico = [false, false, false, false, true, false, false, false, false, false, false];
 
 var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
@@ -159,7 +159,7 @@ for (var i = 0; i < groupNames.length; i++) {
         ctx.drawImage(imgSlovenia, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
-    
+
     if (nationalityMexico[i]) {
         ctx.drawImage(imgMexico, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
