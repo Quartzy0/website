@@ -1,25 +1,25 @@
 //Variables
-var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 3(7-8)", "Year 4(8-9)", "Year 5(9-10)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)", "Year 10(14-15)"];
-var males = [6, 6, 13, 10, 18, 13, 8, 6, 12, 8, 19, 18];
-var females = [7, 8, 10, 13, 8, 7, 13, 5, 12, 12, 11, 12];
-var siblings = [12, 16, 21, 27, 25, 27, 23, 18, 32, 26, 44, 46];
+var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 3(7-8)", "Year 4(8-9)", "Year 5(9-10)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)", "Year 10(14-15)", "Year 11(15-16)"];
+var males = [6, 6, 13, 10, 18, 13, 8, 6, 12, 8, 19, 18, 10];
+var females = [7, 8, 10, 13, 8, 7, 13, 5, 12, 12, 11, 12, 13];
+var siblings = [12, 16, 21, 27, 25, 27, 23, 18, 32, 26, 44, 46, ];
 
-var nationalitySpain = [true, true, true, true, true, true, true, true, true, true, true, true];
-var nationalityEngland = [false, true, true, true, false, true, true, false, false, false, false, false];
-var nationalityIrland = [false, true, false, false, false, false, false, false, false, false, false, false];
-var nationalityAmerica = [false, false, false, false, false, false, false, false, false, false, false, false];
-var nationalityAustria = [false, false, false, false, false, false, false, false, false, false, false, false];
-var nationalityCanada = [false, false, false, false, false, false, false, false, false, false, false, false];
-var nationalityFrance = [false, false, false, false, true, false, false, false, false, false, false, false];
-var nationalityGermany = [false, false, false, false, false, true, false, false, false, false, false, false];
-var nationalityHungary = [false, false, false, false, false, false, false, false, false, false, false, false];
-var nationalityKuwaiti = [false, false, false, false, false, false, false, false, true, true, false, false];
-var nationalityScotland = [false, false, false, false, false, false, false, false, false, false, false, false];
-var nationalityWhales = [false, false, false, false, false, false, false, false, false, true, false, false];
-var nationalitySlovenia = [false, false, false, false, false, false, false, false, false, true, false, false];
-var nationalityVenezuela = [false, false, false, false, false, false, false, false, true, false, false, false];
-var nationalityMexico = [false, false, false, false, true, false, false, false, false, false, false, false];
-var nationalityRussia = [false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalitySpain = [true, true, true, true, true, true, true, true, true, true, true, true, true];
+var nationalityEngland = [false, true, true, true, false, true, true, false, false, false, false, false, true];
+var nationalityIrland = [false, true, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityAmerica = [false, false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityAustria = [false, false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityCanada = [false, false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityFrance = [false, false, false, false, true, false, false, false, false, false, false, false, false];
+var nationalityGermany = [false, false, false, false, false, true, false, false, false, false, false, false, false];
+var nationalityHungary = [false, false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityKuwaiti = [false, false, false, false, false, false, false, false, true, true, false, false, true];
+var nationalityScotland = [false, false, false, false, false, false, false, false, false, false, false, false, false];
+var nationalityWhales = [false, false, false, false, false, false, false, false, false, true, false, false, true];
+var nationalitySlovenia = [false, false, false, false, false, false, false, false, false, true, false, false, false];
+var nationalityVenezuela = [false, false, false, false, false, false, false, false, true, false, false, false, false];
+var nationalityMexico = [false, false, false, false, true, false, false, false, false, false, false, false, false];
+var nationalityRussia = [false, false, false, false, false, false, false, false, false, false, false, false, true];
 
 var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
