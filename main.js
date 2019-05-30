@@ -1,8 +1,8 @@
 //Variables
-var groupNames = ["Nursery(2-4)", "Reception(4-5)", "Year 1(5-6)", "Year 2(6-7)", "Year 3(7-8)", "Year 4(8-9)", "Year 5(9-10)", "Year 6(10-11)", "Year 7(11-12)", "Year 8(12-13)", "Year 9(13-14)", "Year 10(14-15)", "Year 11(15-16)"];
+var groupNames = ["Nursery", "Reception", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5", "Year 6", "Year 7", "Year 8", "Year 9", "Year 10", "Year 11", "Year 12"];
 var males = [6, 6, 13, 10, 18, 13, 8, 6, 12, 8, 19, 18, 10];
 var females = [7, 8, 10, 13, 8, 7, 13, 5, 12, 12, 11, 12, 13];
-var siblings = [12, 16, 21, 27, 25, 27, 23, 18, 32, 26, 44, 46, ];
+var siblings = [12, 16, 21, 27, 25, 27, 23, 18, 32, 26, 44, 46, 37];
 
 var nationalitySpain = [true, true, true, true, true, true, true, true, true, true, true, true, true];
 var nationalityEngland = [false, true, true, true, false, true, true, false, false, false, false, false, true];
