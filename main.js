@@ -38,7 +38,7 @@ var imgVenezuela = document.getElementById("venezuela");
 var imgMexico = document.getElementById("mexico");
 var imgRussia = document.getElementById("russia");
 
-var analisys = "For most classes|new|there are more female|new|students than male|new|with the exception|new|of Year 9.";
+var analisys = "22/4/2019|new||new|There are the|new| same number of|new| boys and girls|new| in total(140)|new| and the same|new| seems to be the case|new| most of the time|new| with the individual|new| classes"
 
 var maxAmmount = 1;
 for (var i = 0; i < males.length; i++) {
