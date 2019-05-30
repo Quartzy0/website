@@ -19,6 +19,7 @@ var nationalityWhales = [false, false, false, false, false, false, false, false,
 var nationalitySlovenia = [false, false, false, false, false, false, false, false, false, true, false];
 var nationalityVenezuela = [false, false, false, false, false, false, false, false, true, false, false];
 var nationalityMexico = [false, false, false, false, true, false, false, false, false, false, false];
+var nationalityRussia = [false, false, false, false, false, false, false, false, false, false, false];
 
 var imgSpain = document.getElementById("spain");
 var imgEngland = document.getElementById("england");
@@ -35,6 +36,7 @@ var imgWhales = document.getElementById("whales");
 var imgSlovenia = document.getElementById("slovenia");
 var imgVenezuela = document.getElementById("venezuela");
 var imgMexico = document.getElementById("mexico");
+var imgRussia = document.getElementById("russia");
 
 var analisys = "For most classes|new|there are more female|new|students than male|new|with the exception|new|of Year 9.";
 
@@ -159,9 +161,12 @@ for (var i = 0; i < groupNames.length; i++) {
         ctx.drawImage(imgSlovenia, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
-
     if (nationalityMexico[i]) {
         ctx.drawImage(imgMexico, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
+        imgXCount++;
+    }
+    if (nationalityRussia[i]) {
+        ctx.drawImage(imgRussia, canvas.width / 2 - 605 - (200 - (50 * imgXCount)), ((canvas.height - 65) - spaceBetweenNumber * i) - 50, 40, 30);
         imgXCount++;
     }
 }
